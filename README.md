@@ -20,6 +20,3 @@ Add your tests in the `/tests` folder.
 
 ## Hosting
 Deploy to platforms like Render or Pipeops.
-
-## ER Diagram
-Use [drawSQL](https://drawsql.app) to visualize user-task relationships.
