@@ -20,3 +20,18 @@ Add your tests in the `/tests` folder.
 
 ## Hosting
 Deploy to platforms like Render or Pipeops.
+
+### Deploying to Render
+
+1. Create a new Web Service on Render and connect your GitHub repository.
+2. Set the build command to: `npm install`
+3. Set the start command to: `node app.js` (or `npm start` if defined).
+4. Add environment variables on Render: `MONGO_URI`, `SESSION_SECRET`, and `PORT` (optional).
+5. Deploy. Render will build and start your app.
+
+Notes:
+- If you use a managed MongoDB (Atlas), set `MONGO_URI` to the connection string.
+- For HTTPS and custom domains, follow Render DNS instructions in the dashboard.
+
+## ER Diagram
+Use [drawSQL](https://drawsql.app) to visualize user-task relationships.
